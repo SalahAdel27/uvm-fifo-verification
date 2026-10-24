@@ -1,0 +1,196 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /fifo_top/DUT
+=== Design Unit: work.FIFO
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        27        27         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /fifo_top/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FIFO.sv
+------------------------------------IF Branch------------------------------------
+    22                                       395     Count coming in to IF
+    22              1                          8     
+    27              1                        387     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    28                                       387     Count coming in to IF
+    28              1                        136     
+    33              1                        251     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    36                                       387     Count coming in to IF
+    36              1                        128     
+    38              1                        259     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    44                                       254     Count coming in to IF
+    44              1                          8     
+    48              1                        246     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                       246     Count coming in to IF
+    49              1                        104     
+                                             142     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    53                                       246     Count coming in to IF
+    53              1                          3     
+    55              1                        243     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    61                                       304     Count coming in to IF
+    61              1                          8     
+    64              1                        296     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    65                                       296     Count coming in to IF
+    65              1                        100     
+    67              1                         40     
+    69              1                         29     
+    71              1                          1     
+                                             126     All False Count
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                       174     Count coming in to IF
+    76              1                         49     
+    76              2                        125     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    77                                       174     Count coming in to IF
+    77              1                          5     
+    77              2                        169     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                       174     Count coming in to IF
+    78              1                         62     
+    78              2                        112     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                       174     Count coming in to IF
+    79              1                          7     
+    79              2                        167     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      24        24         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /fifo_top/DUT --
+
+  File FIFO.sv
+----------------Focused Condition View-------------------
+Line       28 Item    1  (wr_en && (count < 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       36 Item    1  (wr_en && (count == 8))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       49 Item    1  (rd_en && (count != 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       53 Item    1  (rd_en && (count == 0))
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       65 Item    1  ((~rd_en && wr_en) && ~full)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       67 Item    1  ((rd_en && ~wr_en) && ~empty)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       69 Item    1  ((rd_en && wr_en) && full)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       71 Item    1  ((rd_en && wr_en) && empty)
+Condition totals: 3 of 3 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       76 Item    1  (count == 8)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       77 Item    1  (count == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (count == (8 - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       79 Item    1  (count == 1)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      27        27         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /fifo_top/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File FIFO.sv
+    21              1                        395     
+    23              1                          8     
+    24              1                          8     
+    25              1                          8     
+    29              1                        136     
+    30              1                        136     
+    31              1                        136     
+    34              1                        251     
+    37              1                        128     
+    39              1                        259     
+    43              1                        254     
+    45              1                          8     
+    46              1                          8     
+    50              1                        104     
+    51              1                        104     
+    54              1                          3     
+    56              1                        243     
+    60              1                        304     
+    62              1                          8     
+    66              1                        100     
+    68              1                         40     
+    70              1                         29     
+    72              1                          1     
+    76              1                        175     
+    77              1                        175     
+    78              1                        175     
+    79              1                        175     
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

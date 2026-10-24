@@ -1,0 +1,103 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /fifo_top/DUT/fifo_assertions_inst
+=== Design Unit: work.fifo_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      14        14         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/fifo_top/DUT/fifo_assertions_inst/a_full
+                     fifo_assertions.sv(30)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_empty
+                     fifo_assertions.sv(31)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_afull
+                     fifo_assertions.sv(32)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_aempty
+                     fifo_assertions.sv(33)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_reset_clear
+                     fifo_assertions.sv(49)             0          4        387          0        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ack
+                     fifo_assertions.sv(57)             0        135        251          4        391          1           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_full_no_ack
+                     fifo_assertions.sv(65)             0        175        209          7        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_empty_underflow
+                     fifo_assertions.sv(73)             0         13        374          4        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_overflow_condition
+                     fifo_assertions.sv(81)             0        127        259          5        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ptr_wrap
+                     fifo_assertions.sv(89)             0         14        373          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_rd_ptr_wrap
+                     fifo_assertions.sv(97)             0         10        377          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_count_range
+                     fifo_assertions.sv(104)            0        387          0          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ptr_range
+                     fifo_assertions.sv(110)            0        387          0          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_rd_ptr_range
+                     fifo_assertions.sv(116)            0        387          0          4        391          0           1 off
+
+=================================================================================
+=== Instance: /fifo_sequence_pkg
+=== Design Unit: work.fifo_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/fifo_sequence_pkg/fifo_write_only_sequence/body/#ublk#40571367#43/immed__46
+                     fifo_sequence_pkg.sv(46)           0         20          0          0         20          0           0 off
+/fifo_sequence_pkg/fifo_read_only_sequence/body/#ublk#40571367#69/immed__72
+                     fifo_sequence_pkg.sv(72)           0         20          0          0         20          0           0 off
+/fifo_sequence_pkg/fifo_write_read_sequence/body/#ublk#40571367#95/immed__98
+                     fifo_sequence_pkg.sv(98)           0        350          0          0        350          0           0 off
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass     Vacuous    Disable    Attempt     Active Peak Active ATV
+                                                  Count        Count    Count      Count      Count       Count  Count          
+--------------------------------------------------------------------------------------------------------------------------------
+/fifo_top/DUT/fifo_assertions_inst/a_full
+                     fifo_assertions.sv(30)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_empty
+                     fifo_assertions.sv(31)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_afull
+                     fifo_assertions.sv(32)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_aempty
+                     fifo_assertions.sv(33)             0        174          0          0        174          0           0 off
+/fifo_top/DUT/fifo_assertions_inst/a_reset_clear
+                     fifo_assertions.sv(49)             0          4        387          0        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ack
+                     fifo_assertions.sv(57)             0        135        251          4        391          1           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_full_no_ack
+                     fifo_assertions.sv(65)             0        175        209          7        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_empty_underflow
+                     fifo_assertions.sv(73)             0         13        374          4        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_overflow_condition
+                     fifo_assertions.sv(81)             0        127        259          5        391          0           2 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ptr_wrap
+                     fifo_assertions.sv(89)             0         14        373          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_rd_ptr_wrap
+                     fifo_assertions.sv(97)             0         10        377          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_count_range
+                     fifo_assertions.sv(104)            0        387          0          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_wr_ptr_range
+                     fifo_assertions.sv(110)            0        387          0          4        391          0           1 off
+/fifo_top/DUT/fifo_assertions_inst/a_rd_ptr_range
+                     fifo_assertions.sv(116)            0        387          0          4        391          0           1 off
+/fifo_sequence_pkg/fifo_write_only_sequence/body/#ublk#40571367#43/immed__46
+                     fifo_sequence_pkg.sv(46)           0         20          0          0         20          0           0 off
+/fifo_sequence_pkg/fifo_read_only_sequence/body/#ublk#40571367#69/immed__72
+                     fifo_sequence_pkg.sv(72)           0         20          0          0         20          0           0 off
+/fifo_sequence_pkg/fifo_write_read_sequence/body/#ublk#40571367#95/immed__98
+                     fifo_sequence_pkg.sv(98)           0        350          0          0        350          0           0 off
+
+Total Coverage By Instance (filtered view): 100.00%
+

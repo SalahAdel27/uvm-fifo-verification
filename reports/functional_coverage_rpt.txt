@@ -1,0 +1,676 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /fifo_coverage_pkg
+=== Design Unit: work.fifo_coverage_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses         16        na        na        na
+            Covergroup Bins         65        65         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_pkg/fifo_coverage/fifo_cg        100.00%        100          -    Covered              
+    covered/total bins:                                    65         65          -                      
+    missing/total bins:                                     0         65          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint wr_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_en_on                                      266          1          -    Covered              
+        bin wr_en_off                                     125          1          -    Covered              
+    Coverpoint rd_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd_en_on                                      117          1          -    Covered              
+        bin rd_en_off                                     274          1          -    Covered              
+    Coverpoint wr_ack_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_ack_on                                     136          1          -    Covered              
+        bin wr_ack_off                                    255          1          -    Covered              
+    Coverpoint overflow_covp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow_on                                   128          1          -    Covered              
+        bin overflow_off                                  263          1          -    Covered              
+    Coverpoint full_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_on                                       182          1          -    Covered              
+        bin full_off                                      209          1          -    Covered              
+    Coverpoint empty_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty_on                                       18          1          -    Covered              
+        bin empty_off                                     373          1          -    Covered              
+    Coverpoint almostfull_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostfull_on                                  92          1          -    Covered              
+        bin almostfull_off                                299          1          -    Covered              
+    Coverpoint almostempty_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostempty_on                                  8          1          -    Covered              
+        bin almostempty_off                               383          1          -    Covered              
+    Coverpoint underflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow_on                                   13          1          -    Covered              
+        bin underflow_off                                 378          1          -    Covered              
+    Cross wr_rd_ack_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,wr_ack_off>           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_off>           101          1          -    Covered              
+            bin <wr_en_off,rd_en_on,wr_ack_off>            52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_off>             29          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_on>            100          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_on>              36          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_ack_on                         0                     -    ZERO                 
+    Cross wr_rd_overflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,overflow_off>         73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_off>         102          1          -    Covered              
+            bin <wr_en_off,rd_en_on,overflow_off>          52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_off>           36          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_on>           99          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_on>            29          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_full_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,full_off>             39          1          -    Covered              
+            bin <wr_en_off,rd_en_off,full_on>              34          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_off>              53          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_on>              148          1          -    Covered              
+            bin <wr_en_off,rd_en_on,full_off>              52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,full_off>               65          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_empty_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,empty_off>            70          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_off>             39          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_off>            199          1          -    Covered              
+            bin <wr_en_on,rd_en_on,empty_off>              65          1          -    Covered              
+            bin <wr_en_off,rd_en_off,empty_on>              3          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_on>               2          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_on>              13          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_rd_empty_on                       0                     -    ZERO                 
+    Cross wr_rd_almostfull_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostfull_off> 
+                                                           58          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_off> 
+                                                          184          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_off> 
+                                                           36          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_off>         21          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostfull_on> 
+                                                           15          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_on>         17          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_on>         16          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_on>          44          1          -    Covered              
+    Cross wr_rd_almostempty_covp                      100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostempty_off> 
+                                                           72          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_off> 
+                                                          197          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_off> 
+                                                           50          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_off> 
+                                                           64          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostempty_on> 
+                                                            1          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_on> 
+                                                            4          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_on> 
+                                                            2          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_on>          1          1          -    Covered              
+    Cross wr_rd_underflow_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,underflow_off> 
+                                                           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,underflow_off>        201          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_off>         40          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_on>          12          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_off>          64          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_on>            1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+ Covergroup instance \/fifo_coverage_pkg::fifo_coverage::fifo_cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    65         65          -                      
+    missing/total bins:                                     0         65          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint wr_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_en_on                                      266          1          -    Covered              
+        bin wr_en_off                                     125          1          -    Covered              
+    Coverpoint rd_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd_en_on                                      117          1          -    Covered              
+        bin rd_en_off                                     274          1          -    Covered              
+    Coverpoint wr_ack_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_ack_on                                     136          1          -    Covered              
+        bin wr_ack_off                                    255          1          -    Covered              
+    Coverpoint overflow_covp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow_on                                   128          1          -    Covered              
+        bin overflow_off                                  263          1          -    Covered              
+    Coverpoint full_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_on                                       182          1          -    Covered              
+        bin full_off                                      209          1          -    Covered              
+    Coverpoint empty_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty_on                                       18          1          -    Covered              
+        bin empty_off                                     373          1          -    Covered              
+    Coverpoint almostfull_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostfull_on                                  92          1          -    Covered              
+        bin almostfull_off                                299          1          -    Covered              
+    Coverpoint almostempty_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostempty_on                                  8          1          -    Covered              
+        bin almostempty_off                               383          1          -    Covered              
+    Coverpoint underflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow_on                                   13          1          -    Covered              
+        bin underflow_off                                 378          1          -    Covered              
+    Cross wr_rd_ack_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,wr_ack_off>           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_off>           101          1          -    Covered              
+            bin <wr_en_off,rd_en_on,wr_ack_off>            52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_off>             29          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_on>            100          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_on>              36          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_ack_on                         0                     -    ZERO                 
+    Cross wr_rd_overflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,overflow_off>         73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_off>         102          1          -    Covered              
+            bin <wr_en_off,rd_en_on,overflow_off>          52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_off>           36          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_on>           99          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_on>            29          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_full_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,full_off>             39          1          -    Covered              
+            bin <wr_en_off,rd_en_off,full_on>              34          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_off>              53          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_on>              148          1          -    Covered              
+            bin <wr_en_off,rd_en_on,full_off>              52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,full_off>               65          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_empty_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,empty_off>            70          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_off>             39          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_off>            199          1          -    Covered              
+            bin <wr_en_on,rd_en_on,empty_off>              65          1          -    Covered              
+            bin <wr_en_off,rd_en_off,empty_on>              3          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_on>               2          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_on>              13          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_rd_empty_on                       0                     -    ZERO                 
+    Cross wr_rd_almostfull_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostfull_off> 
+                                                           58          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_off> 
+                                                          184          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_off> 
+                                                           36          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_off>         21          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostfull_on> 
+                                                           15          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_on>         17          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_on>         16          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_on>          44          1          -    Covered              
+    Cross wr_rd_almostempty_covp                      100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostempty_off> 
+                                                           72          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_off> 
+                                                          197          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_off> 
+                                                           50          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_off> 
+                                                           64          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostempty_on> 
+                                                            1          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_on> 
+                                                            4          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_on> 
+                                                            2          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_on>          1          1          -    Covered              
+    Cross wr_rd_underflow_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,underflow_off> 
+                                                           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,underflow_off>        201          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_off>         40          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_on>          12          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_off>          64          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_on>            1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_pkg/fifo_coverage/fifo_cg        100.00%        100          -    Covered              
+    covered/total bins:                                    65         65          -                      
+    missing/total bins:                                     0         65          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint wr_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_en_on                                      266          1          -    Covered              
+        bin wr_en_off                                     125          1          -    Covered              
+    Coverpoint rd_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd_en_on                                      117          1          -    Covered              
+        bin rd_en_off                                     274          1          -    Covered              
+    Coverpoint wr_ack_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_ack_on                                     136          1          -    Covered              
+        bin wr_ack_off                                    255          1          -    Covered              
+    Coverpoint overflow_covp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow_on                                   128          1          -    Covered              
+        bin overflow_off                                  263          1          -    Covered              
+    Coverpoint full_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_on                                       182          1          -    Covered              
+        bin full_off                                      209          1          -    Covered              
+    Coverpoint empty_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty_on                                       18          1          -    Covered              
+        bin empty_off                                     373          1          -    Covered              
+    Coverpoint almostfull_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostfull_on                                  92          1          -    Covered              
+        bin almostfull_off                                299          1          -    Covered              
+    Coverpoint almostempty_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostempty_on                                  8          1          -    Covered              
+        bin almostempty_off                               383          1          -    Covered              
+    Coverpoint underflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow_on                                   13          1          -    Covered              
+        bin underflow_off                                 378          1          -    Covered              
+    Cross wr_rd_ack_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,wr_ack_off>           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_off>           101          1          -    Covered              
+            bin <wr_en_off,rd_en_on,wr_ack_off>            52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_off>             29          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_on>            100          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_on>              36          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_ack_on                         0                     -    ZERO                 
+    Cross wr_rd_overflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,overflow_off>         73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_off>         102          1          -    Covered              
+            bin <wr_en_off,rd_en_on,overflow_off>          52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_off>           36          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_on>           99          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_on>            29          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_full_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,full_off>             39          1          -    Covered              
+            bin <wr_en_off,rd_en_off,full_on>              34          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_off>              53          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_on>              148          1          -    Covered              
+            bin <wr_en_off,rd_en_on,full_off>              52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,full_off>               65          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_empty_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,empty_off>            70          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_off>             39          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_off>            199          1          -    Covered              
+            bin <wr_en_on,rd_en_on,empty_off>              65          1          -    Covered              
+            bin <wr_en_off,rd_en_off,empty_on>              3          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_on>               2          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_on>              13          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_rd_empty_on                       0                     -    ZERO                 
+    Cross wr_rd_almostfull_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostfull_off> 
+                                                           58          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_off> 
+                                                          184          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_off> 
+                                                           36          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_off>         21          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostfull_on> 
+                                                           15          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_on>         17          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_on>         16          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_on>          44          1          -    Covered              
+    Cross wr_rd_almostempty_covp                      100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostempty_off> 
+                                                           72          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_off> 
+                                                          197          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_off> 
+                                                           50          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_off> 
+                                                           64          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostempty_on> 
+                                                            1          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_on> 
+                                                            4          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_on> 
+                                                            2          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_on>          1          1          -    Covered              
+    Cross wr_rd_underflow_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,underflow_off> 
+                                                           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,underflow_off>        201          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_off>         40          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_on>          12          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_off>          64          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_on>            1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+ Covergroup instance \/fifo_coverage_pkg::fifo_coverage::fifo_cg  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    65         65          -                      
+    missing/total bins:                                     0         65          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint wr_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_en_on                                      266          1          -    Covered              
+        bin wr_en_off                                     125          1          -    Covered              
+    Coverpoint rd_en_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin rd_en_on                                      117          1          -    Covered              
+        bin rd_en_off                                     274          1          -    Covered              
+    Coverpoint wr_ack_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin wr_ack_on                                     136          1          -    Covered              
+        bin wr_ack_off                                    255          1          -    Covered              
+    Coverpoint overflow_covp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow_on                                   128          1          -    Covered              
+        bin overflow_off                                  263          1          -    Covered              
+    Coverpoint full_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin full_on                                       182          1          -    Covered              
+        bin full_off                                      209          1          -    Covered              
+    Coverpoint empty_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin empty_on                                       18          1          -    Covered              
+        bin empty_off                                     373          1          -    Covered              
+    Coverpoint almostfull_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostfull_on                                  92          1          -    Covered              
+        bin almostfull_off                                299          1          -    Covered              
+    Coverpoint almostempty_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin almostempty_on                                  8          1          -    Covered              
+        bin almostempty_off                               383          1          -    Covered              
+    Coverpoint underflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow_on                                   13          1          -    Covered              
+        bin underflow_off                                 378          1          -    Covered              
+    Cross wr_rd_ack_covp                              100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,wr_ack_off>           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_off>           101          1          -    Covered              
+            bin <wr_en_off,rd_en_on,wr_ack_off>            52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_off>             29          1          -    Covered              
+            bin <wr_en_on,rd_en_off,wr_ack_on>            100          1          -    Covered              
+            bin <wr_en_on,rd_en_on,wr_ack_on>              36          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_ack_on                         0                     -    ZERO                 
+    Cross wr_rd_overflow_covp                         100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,overflow_off>         73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_off>         102          1          -    Covered              
+            bin <wr_en_off,rd_en_on,overflow_off>          52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_off>           36          1          -    Covered              
+            bin <wr_en_on,rd_en_off,overflow_on>           99          1          -    Covered              
+            bin <wr_en_on,rd_en_on,overflow_on>            29          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_full_covp                             100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,full_off>             39          1          -    Covered              
+            bin <wr_en_off,rd_en_off,full_on>              34          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_off>              53          1          -    Covered              
+            bin <wr_en_on,rd_en_off,full_on>              148          1          -    Covered              
+            bin <wr_en_off,rd_en_on,full_off>              52          1          -    Covered              
+            bin <wr_en_on,rd_en_on,full_off>               65          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+    Cross wr_rd_empty_covp                            100.00%        100          -    Covered              
+        covered/total bins:                                 7          7          -                      
+        missing/total bins:                                 0          7          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,empty_off>            70          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_off>             39          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_off>            199          1          -    Covered              
+            bin <wr_en_on,rd_en_on,empty_off>              65          1          -    Covered              
+            bin <wr_en_off,rd_en_off,empty_on>              3          1          -    Covered              
+            bin <wr_en_on,rd_en_off,empty_on>               2          1          -    Covered              
+            bin <wr_en_off,rd_en_on,empty_on>              13          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_rd_empty_on                       0                     -    ZERO                 
+    Cross wr_rd_almostfull_covp                       100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostfull_off> 
+                                                           58          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_off> 
+                                                          184          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_off> 
+                                                           36          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_off>         21          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostfull_on> 
+                                                           15          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostfull_on>         17          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostfull_on>         16          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostfull_on>          44          1          -    Covered              
+    Cross wr_rd_almostempty_covp                      100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,almostempty_off> 
+                                                           72          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_off> 
+                                                          197          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_off> 
+                                                           50          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_off> 
+                                                           64          1          -    Covered              
+            bin <wr_en_off,rd_en_off,almostempty_on> 
+                                                            1          1          -    Covered              
+            bin <wr_en_on,rd_en_off,almostempty_on> 
+                                                            4          1          -    Covered              
+            bin <wr_en_off,rd_en_on,almostempty_on> 
+                                                            2          1          -    Covered              
+            bin <wr_en_on,rd_en_on,almostempty_on>          1          1          -    Covered              
+    Cross wr_rd_underflow_covp                        100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <wr_en_off,rd_en_off,underflow_off> 
+                                                           73          1          -    Covered              
+            bin <wr_en_on,rd_en_off,underflow_off>        201          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_off>         40          1          -    Covered              
+            bin <wr_en_off,rd_en_on,underflow_on>          12          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_off>          64          1          -    Covered              
+            bin <wr_en_on,rd_en_on,underflow_on>            1          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin wr_en_overflow_on                    0                     -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
